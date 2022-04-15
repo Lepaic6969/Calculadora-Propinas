@@ -1,0 +1,194 @@
+/* Importamos un tipo de letra */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center,center; */
+    background-attachment: fixed;
+    color:white;
+}
+
+
+.contenedor-calculadora{
+    width: 40%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20vh;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    border:2px solid rgb(34,32,31);
+    background-color: rgb(52,50,49);
+}
+.contenedor-calculadora h1{
+    margin-bottom: 20px;
+    padding: 15px;
+    /* font-size: 25px; */
+}
+#enviar{
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+}
+#enviar:hover{
+    background-color: rgb(34,32,31);
+    color:white;
+    font-weight: bolder;
+}
+#cuenta,#propina{
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+/* Estilos de la tarjeta que aparece con los resultados */
+
+.contenedor-resultado{
+    background-color: white;
+    color:black;
+    font-family: 'Kaushan Script', cursive;
+    width: 40%;
+    height: 170px;
+    margin:0 auto;
+    margin-top: 30px;
+    border-radius: 25px;
+    border:2px solid rgb(34,32,31);
+    font-weight: bolder;
+}
+.contenedor-resultado h2{
+    margin-left: 50px;
+}
+#resultados{
+    margin-left: 35%;
+}
+
+/* Clase para ocultar la tarjeta */
+.ocultar{
+    display:none;
+}
+
+/* Estilos botón de limpiar */
+
+#btn-limpiar{
+    display:block;
+    margin:20px auto;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(34,32,31);
+    color:white;
+}
+#btn-limpiar:hover{
+     background: white;
+     color:rgb(34,32,31);;
+    font-weight: bold;
+}
+
+/******** Ahora vamos con el responsive *****/
+@media(max-width:1100px){
+    #resultados{
+        margin-left: 25%;
+    }
+}
+@media(max-width:925px){
+    .contenedor-calculadora{
+        width: 50%;
+        margin-top: 15vh;
+    }
+}
+@media(max-width:840px){
+    #resultados{
+        margin-left: 15%;
+    }
+}
+@media(max-width:700px){
+    #resultados{
+        margin-left: 5%;
+    }
+}
+
+@media(max-width:630px){
+    .contenedor-calculadora{
+        width: 60%;
+        margin-top: 10vh;
+    }
+    .contenedor-resultado{
+    
+    
+    
+        width: 50%;
+        height: 170px;
+        margin:0 auto;
+        margin-top: 5vh;
+        border-radius: 25px;
+        border:2px solid rgb(34,32,31);
+        font-weight: bolder;
+    }
+}
+@media(max-width:500px){
+    .contenedor-calculadora{
+        width: 70%;
+        margin-top: 7vh;
+    }
+    .contenedor-resultado{
+        margin-top: 2vh;
+        width: 60%;
+        height: 170px;
+    
+    }
+}
+
+@media(max-width:420px){
+    .contenedor-calculadora{
+        width: 80%;
+        margin-top: 4vh;
+    }
+    .contenedor-resultado{
+    
+        width: 70%;
+        height: 170px;
+    
+    }
+}
+
+@media(max-width:355px){
+    .contenedor-calculadora{
+        width: 90%;
+   
+       
+    }
+    .contenedor-resultado{
+    
+        width: 80%;
+        height: 170px;
+    
+    }
+}
+@media(max-width:310px){
+    
+    .contenedor-resultado{
+    
+        width: 90%;
+        height: 170px;
+    
+    }
+}
+@media(max-width:275px){
+    .contenedor-calculadora{
+        width: 96%;
+      
+    }
+    
+    .contenedor-resultado{
+    
+        width: 96%;
+        height: 170px;
+    
+    }
+}
